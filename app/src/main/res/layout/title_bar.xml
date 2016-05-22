@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="58dp"
+    android:background="@color/titleRed" >
+
+    <ImageView
+        android:id="@id/title_bar_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4.0dip"
+        android:background="@drawable/title_back_selector"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/title_bar_logo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4.0dip"
+        android:background="@drawable/title_logo"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@id/title_bar_login_logo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6.0dip"
+        android:background="@drawable/login_title_logo"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/title_bar_login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@id/title_bar_login_logo"
+        android:text="用户"
+        android:background="#22000000"
+        android:paddingLeft="1dip"
+        android:paddingRight="1dip"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@id/title_bar_middle_tv"
+        style="@style/title_bar_content_sytle"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@id/title_bar_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6.0dip"
+        android:background="@drawable/title_search_selector"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@id/title_bar_download_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6.0dip"
+        android:layout_toLeftOf="@id/title_bar_home_btn"
+        android:background="@drawable/title_download_bg_selector"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/title_bar_time_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6.0dip"
+        android:layout_toLeftOf="@id/title_bar_download_btn"
+        android:background="@drawable/title_time_bg_selector"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_bar_send_btn"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/send_notice_back"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="sendNotice"
+        android:text="发通知"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:iconifiedByDefault="false"
+        android:inputType="textFilter"
+        android:queryHint="请输入关键字查询"
+        android:visibility="gone" >
+    </SearchView>
+
+</RelativeLayout>
